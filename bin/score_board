@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "bundler/setup"
+require "bowling"
+
+Bowling.print_score_board(Bowling.parse(ARGF.read), $stdout) if __FILE__ == $PROGRAM_NAME

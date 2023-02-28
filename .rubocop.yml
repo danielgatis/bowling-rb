@@ -1,0 +1,26 @@
+require: rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 3.1
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
+
+Style/StringLiteralsInInterpolation:
+  Enabled: true
+  EnforcedStyle: double_quotes
+
+Lint/RedundantStringCoercion:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 120
+  Exclude:
+    - '**/*_spec.rb'
+
+RSpec/ExampleLength:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: false
